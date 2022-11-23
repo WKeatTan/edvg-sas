@@ -1,0 +1,23 @@
+{
+  "name": "edvg-sas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "WKeatTan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WKeatTan/edvg-sas.git"
+  },
+  "engines": {
+    "node": ">=18.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/WKeatTan/edvg-sas/issues"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
