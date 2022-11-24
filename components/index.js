@@ -1,3 +1,3 @@
-const component = () => console.log("component edvg");
+const component = () => <>test</>
 
 export default component;
