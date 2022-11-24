@@ -1,4 +1,4 @@
-const components = require("components");
+const components = require("./components");
 
 module.exports = {
   components,
