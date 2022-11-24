@@ -1,6 +1,6 @@
 {
   "name": "edvg-sas",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
@@ -29,12 +29,14 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.15",
     "axios": "^1.2.0",
+    "bootstrap": "^5.2.3",
     "i18next": "^22.0.6",
     "i18next-http-backend": "^2.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.0.0",
+    "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1"
   },
   "devDependencies": {
