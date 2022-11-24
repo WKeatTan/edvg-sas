@@ -1,14 +1,19 @@
 {
   "name": "edvg-sas",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
-  "main": "dist/cjs/index.js",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
+  },
   "keywords": [],
   "author": "WKeatTan",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/WKeatTan"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/WKeatTan/edvg-sas.git"
@@ -20,31 +25,52 @@
   "bugs": {
     "url": "https://github.com/WKeatTan/edvg-sas/issues"
   },
-  "scripts": {
-    "rollup": "rollup -c"
-  },
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
   "dependencies": {
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.15",
     "axios": "^1.2.0",
     "i18next": "^22.0.6",
     "i18next-http-backend": "^2.0.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.0.0",
     "react-toastify": "^9.1.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^23.0.2",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^9.0.2",
-    "rollup": "^3.4.0",
-    "rollup-plugin-dts": "^5.0.0",
-    "typescript": "^4.9.3"
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/plugin-proposal-partial-application": "^7.8.3",
+    "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/plugin-transform-spread": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "4.x",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
   }
 }
